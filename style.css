@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  font-family: 'Vazirmatn', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+/* --- اسکرول بار سفارشی و تم گیم --- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0088ff, #4800ff);
+  border-radius: 10px;
+}
+
+/* --- هدر --- */
+header {
+  background: #0c0c0c;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #ff003c70;
+  border-bottom: 1px solid #ff003c60;
+}
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 15px #ff003c;
+  animation: flicker 2s infinite ease-in-out;
+}
+header p {
+  color: #ff3b3b;
+  text-shadow: 0 0 10px #ff004880;
+}
+
+/* --- افکت فلیکر --- */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; text-shadow: 0 0 25px #ff0048; }
+}
+
+/* --- لینک‌ها --- */
+a:hover {
+  color: #ff003c;
+  text-shadow: 0 0 10px #ff0048;
+}
+
+/* --- کارت‌ها --- */
+.card {
+  background: rgba(15, 15, 15, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 15px #002fff;
+  border: 1px solid #0095ff;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px #0022ff;
+}
+
+/* --- بخش تصویر --- */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  max-width: 80%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #000;
+}
+.box img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #00a6ff;
+}
+
+/* --- متن پایین --- */
+.text {
+  background: rgba(15, 15, 15, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 15px #00c3ff;
+  border: 1px solid #00b3ff;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+.text:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #001aff;
+}
+
+/* --- جزئیات قوانین --- */
+details summary {
+  cursor: pointer;
+  color: #ff3b3b;
+  font-weight: bold;
+}
+.text {
+  background: rgba(15, 15, 15, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 15px #002fff;
+  border: 1px solid #0095ff;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+.text1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #001aff;
+}
+
